@@ -1,0 +1,55 @@
+.caixa {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #f1f1f1;
+  margin-bottom: 6.1rem;
+  border-radius: 2.5rem;
+  padding: 3.12rem 2rem;
+  max-width: 50rem;
+
+  &__titulos {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  &__h1 {
+    font-size: 4.88rem;
+    line-height: 1;
+    color: $cor-azul-escuro;
+    text-align: center;
+  }
+
+  &__subtitulo {
+    font-size: 2.76rem;
+    font-weight: 600;
+
+    &--cinza {
+      color: $cor-cinza;
+    }
+  }
+
+  &__lista {
+    list-style: none;
+    font-size: 1.82rem;
+    line-height: 1.2;
+
+    display: flex;
+    flex-flow: column;
+    gap: 0.82rem;
+  }
+
+  &__item-lista {
+    display: flex;
+    align-items: start;
+    gap: 0.82rem;
+  }
+
+  &__icone {
+    width: 1.8rem;
+    margin-top: 0.21rem;
+  }
+}
