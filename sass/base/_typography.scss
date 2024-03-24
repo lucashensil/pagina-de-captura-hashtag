@@ -2,13 +2,22 @@
  * Basic typography style for copy text
  */
 
- body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.4;
-    color: $cor-preta
- } 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: $cor-preta;
+}
 
- b, strong {
+b,
+strong {
+  font-weight: 600;
+}
+
+.subtitulo {
+  @include titulos($size: 4.88rem, $weight: 500);
+  & span {
+    color: $cor-azul-passos;
     font-weight: 600;
- }
+  }
+}

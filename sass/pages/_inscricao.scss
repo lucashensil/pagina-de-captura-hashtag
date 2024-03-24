@@ -16,10 +16,22 @@
 }
 
 .container {
-  &-hero {
+  &--hero {
     position: relative;
     align-items: end;
     width: 100%;
+  }
+
+  &--passo {
+    @include flex($direction: column, $gap: 6rem);
+  }
+}
+
+.grid {
+  &--passo {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 6rem;
+    column-gap: 3rem;
   }
 }
 
@@ -34,4 +46,15 @@
 
 .disclaimer__paragrafo {
   font-size: 1.33rem;
+}
+
+.img-lira {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.passos-cabecalho {
+  @include flex($gap: 1.6rem, $align: center);
+  
 }

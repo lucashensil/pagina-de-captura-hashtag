@@ -22,7 +22,18 @@ body {
   color: #1a1b1f;
 }
 
-b, strong {
+b,
+strong {
+  font-weight: 600;
+}
+
+.subtitulo {
+  font-size: 4.88rem;
+  font-weight: 500;
+  color: #1a1b1f;
+}
+.subtitulo span {
+  color: #256783;
   font-weight: 600;
 }
 
@@ -36,6 +47,10 @@ b, strong {
   display: flex;
   max-width: 100rem;
   margin: auto;
+}
+
+.grid {
+  display: grid;
 }
 
 .botao {
@@ -60,8 +75,9 @@ b, strong {
 
 .caixa {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
   align-items: center;
+  justify-content: start;
   gap: 2rem;
   background-color: #f1f1f1;
   margin-bottom: 6.1rem;
@@ -79,7 +95,10 @@ b, strong {
   transform: translate(50%, -50%);
   background-color: #f1f1f1;
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
+  justify-content: start;
+  gap: 0;
   width: 6.5rem;
   height: 6.5rem;
   padding: 1.1rem;
@@ -101,8 +120,6 @@ b, strong {
 .caixa__subtitulo {
   font-size: 2.76rem;
   font-weight: 700;
-}
-.caixa__subtitulo--cinza {
   color: #4b4d4d;
 }
 .caixa__lista {
@@ -110,17 +127,52 @@ b, strong {
   font-size: 1.82rem;
   line-height: 1.2;
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
   gap: 0.82rem;
 }
 .caixa__item-lista {
   display: flex;
+  flex-flow: row nowrap;
   align-items: start;
+  justify-content: start;
+  gap: 0.82rem;
   gap: 0.82rem;
 }
 .caixa__icone {
   width: 1.8rem;
   margin-top: 0.21rem;
+}
+
+.passo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 1.6rem;
+}
+.passo__cabecalho {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 0.82rem;
+}
+.passo__icone {
+  width: 4.3rem;
+  height: 4.3rem;
+  padding: 0.82rem;
+  border-radius: 0.8rem;
+  background-color: #256783;
+}
+.passo__titulo {
+  font-size: 2.76rem;
+  font-weight: 700;
+  color: #256783;
+}
+.passo p {
+  align-self: center;
 }
 
 .secao--hero {
@@ -136,10 +188,23 @@ b, strong {
   box-shadow: 0 0 12px -1px rgba(0, 0, 0, 0.25);
 }
 
-.container-hero {
+.container--hero {
   position: relative;
   align-items: end;
   width: 100%;
+}
+.container--passo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: start;
+  gap: 6rem;
+}
+
+.grid--passo {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 6rem;
+  column-gap: 3rem;
 }
 
 .div-lira {
@@ -153,6 +218,20 @@ b, strong {
 
 .disclaimer__paragrafo {
   font-size: 1.33rem;
+}
+
+.img-lira {
+  grid-column: 2;
+  grid-row: 1/span 2;
+  align-self: center;
+}
+
+.passos-cabecalho {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  gap: 1.6rem;
 }
 
 /*# sourceMappingURL=style.css.map */
