@@ -8,9 +8,16 @@
 }
 
 .container-hero {
-    align-items: end;
+  position: relative;
+  align-items: end;
+  width: 100%;
 }
 
 .div-lira {
+  position: absolute;
   display: flex;
+  height: 60rem;
+  right: 0;
+  bottom: 0;
+  transform: translateX(10%);
 }
