@@ -72,6 +72,9 @@ strong {
   border-color: #8d6d0b;
   color: #fff;
 }
+.botao--centralizado {
+  align-self: center;
+}
 
 .caixa {
   display: flex;
@@ -193,18 +196,21 @@ strong {
   align-items: end;
   width: 100%;
 }
-.container--passo {
+.container--passo, .container--aprender {
   display: flex;
   flex-flow: column nowrap;
-  align-items: stretch;
+  align-items: start;
   justify-content: start;
   gap: 6rem;
 }
 
 .grid--passo {
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 6rem;
-  column-gap: 3rem;
+  gap: 4rem;
+}
+.grid--aprender {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
 .div-lira {
@@ -226,7 +232,19 @@ strong {
   align-self: center;
 }
 
-.passos-cabecalho {
+.img-aprender {
+  border-radius: 2rem;
+  transition: transform ease 200ms;
+}
+.img-aprender:hover {
+  transform: scale(1.05);
+}
+.img-aprender:last-child {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.cabecalho-titulo {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

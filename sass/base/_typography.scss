@@ -14,10 +14,12 @@ strong {
   font-weight: 600;
 }
 
-.subtitulo {
+.titulo {
   @include titulos($size: 4.88rem, $weight: 500);
   & span {
     color: $cor-azul-passos;
     font-weight: 600;
   }
 }
+
+
