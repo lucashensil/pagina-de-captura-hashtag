@@ -53,6 +53,24 @@ strong {
   display: grid;
 }
 
+.rodape {
+  padding: 4.88rem 2rem;
+}
+.rodape--logo {
+  width: 3.7rem;
+  height: 3.7rem;
+}
+
+.container--rodape {
+  justify-content: end;
+  align-items: center;
+  gap: 0.8rem;
+}
+.container--rodape a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .botao {
   border-radius: 5rem;
   padding: 1rem 2.5rem;
