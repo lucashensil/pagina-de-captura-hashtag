@@ -17,7 +17,9 @@
     background-color: $cor-amarelo;
     border-color: darken($cor-amarelo, 25%);
     color: #fff;
-
-
+  }
+  &--centralizado {
+    align-self: center;
   }
 }
+
